@@ -2,10 +2,10 @@ import numpy as np
 import cv2 as cv
 
 
-prototext = (r"C:\Users\shikh\Desktop\C++\.vscode\COLORIZE_B&W\colorization_deploy_v2.prototxt")
-points = (r"C:\Users\shikh\Desktop\C++\.vscode\COLORIZE_B&W\pts_in_hull.npy")
-model = (r"C:\Users\shikh\Desktop\C++\.vscode\COLORIZE_B&W\colorization_release_v2.caffemodel")
-image_path=(r"C:\Users\shikh\Desktop\C++\.vscode\COLORIZE_B&W\man.jpeg")
+prototext = r"[ENTER THE LOCATION OF THE prototxt FILE HERE]"
+points = r"[ENTER THE LOCATION OF THE pts_in_hull.npy FILE HERE]"
+model = r"[ENTER THE LOCATION OF THE caffemodel FILE HERE]"
+image_path=r"[ENTER THE LOCATION OF THE INPUT BLACK AND WHITE IMAGE FILE HERE]"
 
 
 net = cv.dnn.readNetFromCaffe(prototext, model)
